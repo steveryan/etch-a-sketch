@@ -1,5 +1,6 @@
 $(document).ready(function(){
 	var $container = $('.container');
+	$('.container').css('line-height', '0');
 	var size = prompt('How many rows?');
 	var gridSize = (800-(size*2))/size;
 	
@@ -18,7 +19,7 @@ $('.block').hover(function(){
 
 });
 
-$('h1').click(function(){
+$('button').click(function(){
 	$('.block').remove();
 
 	size=prompt('How many rows?');
